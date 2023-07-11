@@ -1,0 +1,25 @@
+Pipelines:
+  flowforge_helm_management:
+    product: 3rd_party
+    component_name: flowforge/flowforge
+    GitRepos:
+      flowforge_helm_management_repo:
+        configuration:
+          gitRepoName: flowforge-helm
+          branches:
+            include: ff-helm-ingress-and-service-acc-and-unique-names-ci
+          files:
+            include: ^helm/flowforge.+|^.jfrog-pipelines/helm/flowforge.+            
+    BuildsInfo:
+      flowforge_helm_management_build_info:
+    HelmCharts:
+      flowforge_helm_management_helm_chart:
+    steps: 
+      helm_publish:  
+        type: HelmPublish
+        configuration:
+          chartPath: helm/flowforge
+          inputResources:
+          - flowforge_helm_management_repo
+          outputResources:
+          - flowforge_helm_management_helm_chart
