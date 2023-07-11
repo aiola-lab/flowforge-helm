@@ -1,6 +1,6 @@
 Pipelines:
   flowforge_helm_management:
-    product: 3rd_party
+    product: dc-if
     component_name: flowforge/flowforge
     GitRepos:
       flowforge_helm_management_repo:
