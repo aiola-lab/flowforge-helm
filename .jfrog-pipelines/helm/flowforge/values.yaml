@@ -24,4 +24,5 @@ Pipelines:
           - flowforge_helm_management_repo
           outputResources:
           - flowforge_helm_management_helm_chart
+        skipDependencyUpdate: "true"          
           

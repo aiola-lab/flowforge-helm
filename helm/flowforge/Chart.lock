@@ -1,6 +1,6 @@
 dependencies:
 - name: postgresql
-  repository: https://charts.bitnami.com/bitnami
+  repository: https://marketplace.azurecr.io/helm/v1/repo
   version: 10.14.0
-digest: sha256:6d76d2bf60161ead8a4802b56a209720105e5007719aaf2679a59cf067538bbd
-generated: "2021-12-29T20:24:10.223567318Z"
+digest: sha256:eb609d042603a134551161ca2328a26ec1dcc8833ed2f45c5bf6ef01dc88910b
+generated: "2023-07-11T18:13:45.947032+03:00"
