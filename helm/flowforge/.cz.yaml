@@ -1,0 +1,9 @@
+---
+commitizen:
+  bump_message: "bump flowforge management $current_version \u2192 $new_version [skipRun]"
+  name: cz_conventional_commits
+  tag_format: $version
+  version: 1.9.1
+  version_files:
+  - Chart.yaml:version
+  - Chart.yaml:appVersion
