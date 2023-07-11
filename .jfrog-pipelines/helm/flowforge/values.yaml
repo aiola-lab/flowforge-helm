@@ -2,6 +2,7 @@ Pipelines:
   flowforge_helm_management:
     product: dc-if
     component_name: flowforge/flowforge
+    branchStrategy: trunk
     GitRepos:
       flowforge_helm_management_repo:
         configuration:
